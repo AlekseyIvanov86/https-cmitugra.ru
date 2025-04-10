@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЦМИТы Югры — Инновационное творчество для школьников</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="ЦМИТы Югры">
+                <span>ЦМИТы Югры</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#courses">Направления</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#" class="btn-login">Личный кабинет</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero-секция -->
+    <section class="hero">
+        <div class="container">
+            <h1>Создаём будущее вместе!</h1>
+            <p>Бесплатные курсы по робототехнике, программированию и 3D-моделированию для школьников Югры.</p>
+            <div class="cta-buttons">
+                <a href="#signup" class="btn-primary">Записаться онлайн</a>
+                <a href="https://t.me/cmitugra_bot" class="btn-secondary">Чат-бот в Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Направления обучения -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Наши направления</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="robot-icon.svg" alt="Робототехника">
+                    <h3>Робототехника</h3>
+                    <p>Создай своего первого робота!</p>
+                    <a href="#" class="btn-outline">Подробнее</a>
+                </div>
+                <div class="course-card">
+                    <img src="code-icon.svg" alt="Программирование">
+                    <h3>Программирование</h3>
+                    <p>Python, JavaScript, Scratch.</p>
+                    <a href="#" class="btn-outline">Подробнее</a>
+                </div>
+                <div class="course-card">
+                    <img src="3d-icon.svg" alt="3D-моделирование">
+                    <h3>3D-печать</h3>
+                    <p>От модели до готового изделия.</p>
+                    <a href="#" class="btn-outline">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Расписание (интеграция с Calendly) -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Записаться на курс</h2>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/cmitugra"></div>
+        </div>
+    </section>
+
+    <!-- Новости -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2>Последние новости</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="news1.jpg" alt="Новость 1">
+                    <h3>Открытие нового центра в Сургуте</h3>
+                    <p>15 октября 2024</p>
+                </div>
+                <div class="news-card">
+                    <img src="news2.jpg" alt="Новость 2">
+                    <h3>Олимпиада по робототехнике</h3>
+                    <p>5 ноября 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-info">
+                <p>📍 Сургут, ул. 30 лет Победы, 31</p>
+                <p>📞 +7 (3462) 79-20-13</p>
+                <p>📧 info@cmitugra.ru</p>
+            </div>
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=..."></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 ЦМИТы Югры. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><img src="vk-icon.svg" alt="ВКонтакте"></a>
+                <a href="#"><img src="tg-icon.svg" alt="Telegram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Чат-бот (плавающая кнопка) -->
+    <div class="chatbot">
+        <a href="https://t.me/cmitugra_bot"><img src="chatbot-icon.svg" alt="Чат-бот"></a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
